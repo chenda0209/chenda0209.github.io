@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no">
+<title>
+</title>
+<style type="text/css">
+body{
+	margin: 0px;
+}
+
+.tablist {	
+	width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.tabmenu {
+    z-index: 2;
+    padding: 0px;
+    margin:0 auto;
+    position: absolute;
+    top: 20px;
+    width: 100vw;
+    text-align: center;
+    list-style-type:none;
+    background-color: rgba(0,0,0,.1);
+}
+
+.tabmenu a{
+    font-size: 14px;
+    line-height: 50px;
+    color: #fff;
+    width: 22vw;
+    height: 50px;
+    display: inline-block;
+    text-decoration:none;
+}
+
+.one{
+	width: 400vw;
+}
+
+
+#tab1:target .one{
+    transform: translate(0vw);
+    transition: .4s  ease-out;
+}
+
+#tab2:target .one{
+    transform: translate(-100vw);
+    transition: .4s  ease-out;
+}
+
+#tab3:target .one{
+    transform: translate(-200vw);
+    transition: .4s  ease-out;
+}
+
+#tab4:target .one{
+    transform: translate(-300vw);
+    transition: .4s  ease-out;
+}
+
+.window section{
+	position: absolute;
+	width: 300px;
+	height: 100px;
+	left: 50%;
+	top: 50%;
+	margin-top: -50px;
+	margin-left: -150px;
+}
+
+.title{
+	display: block;
+	font-size:48px;
+	color: #fff;
+	line-height: 80px;
+	text-align: center;
+}
+
+.hint{
+	display: block;
+	font-size:24px;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+}
+
+
+.window{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+}
+
+.window1{
+    float: left;
+    left: 0vw;
+    background-color: #000;
+}
+
+.window2{
+    left: 100vw;
+    float: left;
+    background-color: #235456;
+}
+
+.window3{
+    left: 200vw;
+    float: left;
+    background-color: #343275;
+}
+
+.window4{
+    left: 300vw;
+    float: right;
+    background-color: #753242;
+}
+
+.iornman{
+	perspective: 800px;	
+	position: absolute;
+	width: 800px;
+	height: 600px;
+	left:50%;
+	margin-left: -400px;
+	top: 50%;
+	margin-top: -300px;
+	animation: breath 3s ease-out infinite alternate;
+}
+
+@keyframes breath{
+	0%{transform:translateY(5px)}
+	50%{transform:translateY(0px)}
+	100%{transform:translateY(-5px)}
+}
+
+.stake{
+	position: absolute;
+	width: 800px;
+	height: 600px;
+	animation: haha 8s infinite ease-out alternate;
+} 
+@keyframes haha{
+	0%{transform: translate(-2px , 1px)}
+	5%{transform: translate(2px , -1px)}
+	10%{transform: translate(2px , -1px)}
+	15%{transform: translate(-2px , 1px)}
+	20%{transform: translate(-2px, 1px)}
+	25%{transform: translate(2px , 1px)}
+	30%{transform: translate(2px , 1px)}
+	35%{transform: translate(-2px , 1px)}
+	40%{transform: translate(0px , 1px)}
+	50%{transform: translate(-2px , 1px)}
+	60%{transform: translate(-2px , -1px)}
+	65%{transform: translate(2px , 1px)}
+	70%{transform: translate(2px , 1px)}
+	80%{transform: translate(-4px , -1px)}
+	85%{transform: translate(-2px, 1px)}
+	95%{transform: translate(2px , 1px)}
+	100%{transform: translate(-2px , 1px)}
+}
+
+.bird{
+	transform-style: preserve-3d;
+	position: absolute;
+	width: 800px;
+	height: 600px;
+	animation: bird 8s infinite ease-out alternate;
+}
+
+@keyframes bird{
+	0%{transform: rotateY(-2deg)rotateX(-1deg)}
+	5%{transform: rotateY(2deg)rotateX(1deg)}
+	10%{transform: rotateY(2deg)rotateX(1deg)}
+	15%{transform: rotateY(-2deg)rotateX(-1deg)}
+	20%{transform: rotateY(-2deg)rotateX(-1deg)}
+	25%{transform: rotateY(2deg)rotateX(-1deg)}
+	30%{transform: rotateY(2deg)rotateX(-1deg)}
+	35%{transform: rotateY(-2deg)rotateX(-1deg)}
+	40%{transform: rotateY(0deg)rotateX(-1deg)}
+	50%{transform: rotateY(-2deg)rotateX(-1deg)}
+	60%{transform: rotateY(-2deg)rotateX(1deg)}
+	65%{transform: rotateY(2deg)rotateX(-1deg)}
+	70%{transform: rotateY(2deg)rotateX(-1deg)}
+	80%{transform: rotateY(-4deg)rotateX(1deg)}
+	85%{transform: rotateY(-2deg)rotateX(-1deg)}
+	95%{transform: rotateY(2deg)rotateX(-1deg)}
+	100%{transform: rotateY(-2deg)rotateX(-1deg)}
+}
+
+.box{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-color: rgba(0,0,0,0);
+}
+
+
+.wingsa{
+	top:400px;
+	left: 160px;
+	transform-origin: 50% 50%;
+	transform: translate3d(0px,0px ,140px)rotateX(-5deg)rotateY(-15deg);
+}
+
+.wingsb{
+	top:405px;
+	left: 165px;
+	transform-origin: 50% 50%;
+	transform: translate3d(0px,0px ,100px)rotateX(-5deg)rotateY(-15deg);	
+}
+
+.wingsc{
+	top:172px;
+	left: 365px;
+	transform-origin: 50% 50%;
+	transform: translate3d(0px,0px ,200px)rotateX(5deg)rotateY(5deg);	
+}
+
+.wingsd{
+	top:182px;
+	left: 370px;
+	transform-origin: 50% 50%;
+	transform: translate3d(0px,0px ,160px)rotateX(5deg)rotateY(5deg);	
+}
+
+.wingse{
+	top:400px;
+	left: 440px;
+	transform-origin: 50% 50%;
+	transform: translate3d(0px,0px ,120px)rotateX(-10deg)rotateY(15deg);	
+}
+
+.wingsf{
+	top:395px;
+	left: 425px;
+	transform: translate3d(0px,0px ,80px)rotateX(-10deg)rotateY(15deg)scale(0.8);	
+}
+
+.wingsg{
+	top: 505px;
+	left: 250px;
+	transform: translate3d(0px,0px ,80px)rotateX(-5deg)rotateY(-15deg);	
+	stroke:#fff;
+	fill: #fff;
+	stroke-dasharray: 0 300;
+	stroke-dashoffset:0px;
+	animation: miaobian 5s infinite ease-in ;
+}
+@keyframes miaobian{
+	20%{fill:none;stroke-dasharray:300 300;}
+	40%{fill:#fff;stroke-dasharray:300 300;}
+	41%{fill:none;stroke-dasharray:300 300;}
+	42%{fill:#fff;stroke-dasharray:300 300;}
+	43%{fill:none;stroke-dasharray:300 300;}
+	44%{fill:#fff;stroke-dasharray:300 300;}
+	45%{fill:none;stroke-dasharray:300 300;}
+	50%{fill:none;stroke-dasharray:300 300;}
+	100%{fill:#fff;stroke-dasharray:300 300;}	
+}
+
+.hehe{
+	transform-origin: 47% 47%;
+	animation: hehe  4s infinite ease-out alternate;
+}
+@keyframes hehe{
+	0%{stroke:none;}
+	1%{stroke:rgba(255,255,255,1)transform: rotate(0deg);}
+	2%{stroke:none;}
+	3%{stroke:rgba(255,255,255,1)}
+	4%{stroke:none;}
+	5%{stroke:rgba(255,255,255,1)}
+	100%{transform: rotate(360deg);}
+}
+
+
+.anima01{
+	transform-origin: 50% 50%;
+	animation: zhengzhuan01 30s infinite ease-in ;
+}
+.anima02{
+	transform-origin: 50% 50%;
+	animation: fanzhuan01  20s infinite ease-out ;
+}
+@keyframes fanzhuan01{
+	from{transform: rotate(0deg);}	
+	to{transform: rotate(360deg);}
+}
+@keyframes zhengzhuan01{
+	from{transform: rotate(0deg)}	
+	to{transform: rotate(-360deg)}
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="tablist">
+    <div id="tab1">
+        <div id="tab2">
+            <div id="tab3">
+	            <div id="tab4">
+	                <ul class="tabmenu">
+	                        <a href="#tab1"><li>H5 Animation</li></a>
+	                        <a href="#tab2"><li>Web Desgin</li></a>
+	                        <a href="#tab3"><li>M Desgin</li></a>
+	                        <a href="#tab4"><li>Wechat</li></a>                    
+	                </ul>
+	                <div class="one">
+						<div class="window window1">
+							<div class="iornman">
+									<div class="stake">
+										<img src="stake.jpg">
+									</div>
+									<div class="bird">
+										<div class="box wingsa">
+											<svg class="anima01" version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+											<circle  fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" stroke-dasharray="1.9788,19.7877" cx="100" cy="100" r="69.282"/>
+											<circle fill="none" stroke="#FFFFFF" stroke-width="0.25" stroke-miterlimit="10" cx="100" cy="100" r="40.135"/>
+											</svg>
+										</div>
+										<div class="box wingsb">
+											<svg class="anima02" version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+												<circle fill="none" stroke="#27c8fd" stroke-width="8" stroke-miterlimit="10" stroke-dasharray="9.7057,97.0574" cx="100" cy="100" r="50.989"/>
+												<circle fill="none" stroke="#FFFFFF" stroke-width="0.25" stroke-miterlimit="10" cx="100" cy="100" r="26.762"/>
+											</svg>
+										</div>
+										<div class="box wingsc">
+											<svg class="anima02" version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+											<circle class="anima02" opacity="0.5" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" stroke-dasharray="6.0069,1.0011" cx="100" cy="100" r="86.995"/>
+											<path  fill="#FFFFFF" fill-opacity="0.6" stroke="#FFFFFF" stroke-width="0.5" stroke-miterlimit="10" stroke-opacity="0.6" d="M106.722,165.408c-2.21,0.225-4.452,0.34-6.722,0.34c-36.312,0-65.748-29.436-65.748-65.748c0-9.51,2.019-18.548,5.651-26.709 l-10.938-4.119c-4.105,9.446-6.381,19.871-6.381,30.828c0,42.755,34.66,77.415,77.415,77.415c2.672,0,5.313-0.136,7.915-0.4 L106.722,165.408z"/>								
+											</svg>
+										</div>
+										<div class="box wingsd">
+												<svg   version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">					
+												<circle fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" stroke-dasharray="3.9645,1.9823" cx="94" cy="94" r="44.495"/>
+												<circle class="hehe" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" stroke-dasharray="4,48" cx="94" cy="94" r="25"/>
+												<path  opacity="0.4" fill="#FFFFFF" d="M73.164,62.42c6.125-4.179,13.529-6.622,21.503-6.622c21.099,0,38.202,17.104,38.202,38.203
+													c0,0.882-0.03,1.756-0.089,2.624l-4.568-0.559c0.041-0.684,0.063-1.372,0.063-2.066c0-18.561-15.046-33.607-33.606-33.607
+													c-6.832,0-13.188,2.039-18.493,5.541L73.164,62.42z"/>
+												<path  opacity="0.5" fill="#FFFFFF" d="M57.711,84.287l4.306,1.717C61.391,88.566,61.06,91.245,61.06,94
+													c0,18.562,15.046,33.608,33.608,33.608c7.907,0,15.177-2.731,20.917-7.302l2.435,3.93c-6.457,4.994-14.558,7.967-23.353,7.967
+													c-21.099,0-38.202-17.104-38.202-38.202C56.465,90.644,56.898,87.388,57.711,84.287L57.711,84.287z"/>
+												<path    opacity="0.8" id="XMLID_1_" fill="#FFFFFF" d="M132.197,53.453c10.898,10.092,17.72,24.523,17.72,40.547
+													c0,24.961-16.552,46.056-39.279,52.906c0,0-5.17,2.531-7.07-2.188s3.014-6.019,3.014-6.019c19.77-5.255,34.336-23.276,34.336-44.7
+													c0-13.866-6.103-26.307-15.768-34.784c0,0-3.166-3.402-0.157-6.143S132.197,53.453,132.197,53.453z"/>
+													<path  fill="#27c8fd" d="M98.272,60.451c8.869,0.876,17.373,5.258,23.264,12.859c0.425,0.548,0.829,1.106,1.216,1.671l3.953-2.357
+														c-0.485-0.721-0.997-1.431-1.537-2.128c-6.616-8.539-16.135-13.503-26.088-14.581L98.272,60.451z"/>
+													<path   fill="#27c8fd" d="M89.469,131.699c-9.443-1.373-18.388-6.265-24.694-14.403c-2.056-2.653-3.707-5.492-4.965-8.441l0,0
+														l4.455-1.279c1.075,2.408,2.454,4.729,4.142,6.906c5.427,7.003,13.072,11.273,21.178,12.588L89.469,131.699z"/>
+													<path    fill="#FFFFFF" d="M70.089,116.922"/>
+											</svg>
+										</div>
+										<div class="box wingse">
+												<svg  class="anima02" version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+													 width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+												<circle fill="none" stroke="rgba(255,255,255,.5)" stroke-width="0.25" stroke-miterlimit="10" cx="100" cy="100" r="91.683"/>
+												<path fill="#27c8fd" fill-opacity="0.5" d="M100,47.5c-28.995,0-52.5,23.505-52.5,52.5s23.505,52.5,52.5,52.5s52.5-23.505,52.5-52.5
+													S128.995,47.5,100,47.5z M100,124.118c-13.32,0-24.119-10.798-24.119-24.118S86.68,75.881,100,75.881S124.118,86.68,124.118,100
+													S113.32,124.118,100,124.118z"/>
+												<g>	
+												<circle fill="none" stroke="rgba(255,255,255,.6)" stroke-width="4" stroke-miterlimit="10" stroke-opacity="0.8" cx="100" cy="100" r="50.773"/>
+												<circle fill="none" stroke="rgba(255,255,255,.6)" stroke-width="3" stroke-miterlimit="10" cx="100" cy="100" r="30.903"/>
+												<polyline fill="none" stroke="rgba(255,255,255,.5)" stroke-width="3" stroke-miterlimit="10" points="69.097,59.727 100,100 127.805,59.525"/>
+												</g>
+												</svg>
+										</div>
+										<div class="box wingsf" >
+												<svg  version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+													 width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+												<circle class="anima02" fill="none" stroke="#FFFFFF" stroke-width="0.25" stroke-miterlimit="10" cx="100" cy="100" r="91.683"/>
+												<path class="anima02" fill="#FFFFFF" fill-opacity="0.2" d="M100,47.5c-28.995,0-52.5,23.505-52.5,52.5s23.505,52.5,52.5,52.5s52.5-23.505,52.5-52.5
+													S128.995,47.5,100,47.5z M100,124.118c-13.32,0-24.119-10.798-24.119-24.118S86.68,75.881,100,75.881S124.118,86.68,124.118,100
+													S113.32,124.118,100,124.118z"/>
+												<g class="anima01">	
+												<circle fill="none" stroke="rgba(255,255,255,.3)" stroke-width="4" stroke-miterlimit="10" stroke-opacity="0.8" cx="100" cy="100" r="50.773"/>
+												<circle fill="none" stroke="rgba(255,255,255,.3)" stroke-width="3" stroke-miterlimit="10" cx="100" cy="100" r="30.903"/>
+												<polyline  fill="none" stroke="rgba(255,255,255,.2)" stroke-width="3" stroke-miterlimit="10" points="69.097,59.727 100,100 127.805,59.525"/>
+												</g>
+												</svg>
+										</div>
+										<div class="box wingsg">
+											<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+											<polygon  stroke-miterlimit="10" points="89.543,20.72 50.001,69.28 10.457,20.72 "/>
+											</svg>
+										</div>
+									</div>
+							</div>
+						</div>
+	                    <div class="window window2">
+	                    	<section><span class="title">Web Desgin</span><span class="hint">working...just wait...</span>
+	                    	</section>
+	                    </div>
+	                    <div class="window window3">
+	                    	<section><span class="title">M Desgin</span><span class="hint">working...just wait...</span></section>
+	                    </div>
+	                    <div class="window window4">
+	                    	<section><span class="title">Working</span><span class="hint">just wait...</span></section>
+	                    </div>
+	                </div>
+	            </div>
+           	</div>
+        </div>  
+    </div> 
+</div>
+</body>
+</html>
