@@ -5,8 +5,9 @@
 <title>
 </title>
 <style type="text/css">
-body{
+*{
 	margin: 0px;
+	padding: 0px;
 }
 
 .tablist {	
@@ -16,36 +17,105 @@ body{
     overflow: hidden;
 }
 
+.contact{
+    z-index: 2;
+    position: absolute;
+    bottom: 10px;
+    width: 540px;
+	left: 50vw;
+	margin-left:-270px; 
+	text-align: center;
+    background-color: rgba(0,0,0,0);
+}
+
+.contact section{
+	font-size: 12px;
+	color: rgba(255,255,255,.6);
+	line-height: 36px;
+	margin-left:10px;
+	margin-right:10px;
+	display: inline-block;
+}
+
+.QQ{
+	line-height: 40px;
+	width: 120px;
+	height: 36px;
+	border:  1px solid rgba(255,255,255,.3);
+	border-radius: 10px;
+}
+
+.qqicon{
+	margin:0px 5px -10px 0px;
+}
+
+.githubicon{
+	margin:0px 10px -6px 5px;
+}
+
+.point{
+	font-weight: bold;
+	color: #fff;
+}
+
 .tabmenu {
     z-index: 2;
     padding: 0px;
-    margin:0 auto;
     position: absolute;
-    top: 20px;
-    width: 100vw;
+    width: 1000px;
+    height: 50px;
+    top: 10px;
+    left: 50%;
+    margin-left: -500px;
     text-align: center;
-    list-style-type:none;
-    background-color: rgba(0,0,0,.1);
+    background-color: rgba(0,0,0,0);
 }
 
-.tabmenu a{
-    font-size: 14px;
-    line-height: 50px;
-    color: #fff;
-    width: 22vw;
+.nav01,.nav02,.nav03,.nav04{
+    font-size: 16px;
+    color: rgba(255,255,255,.6);
+    width: 200px;
     height: 50px;
+    line-height: 50px;
     display: inline-block;
     text-decoration:none;
+    transition: .3s;
+}
+
+.botton01:hover .nav01{
+	color: rgba(255,255,255,1);
+	transform: scale(1.4);
+}
+.botton02:hover .nav02{
+	color: rgba(255,255,255,1);
+	transform: scale(1.4);
+}
+.botton03:hover .nav03{
+	color: rgba(255,255,255,1);
+	transform: scale(1.4);
+}
+.botton04:hover .nav04{
+	color: rgba(255,255,255,1);
+	transform: scale(1.4);
 }
 
 .one{
 	width: 400vw;
 }
 
+#tab1:target .nav01{
+	color: rgba(255,255,255,1);
+	transform: scale(1.4);
+}
 
 #tab1:target .one{
     transform: translate(0vw);
     transition: .4s  ease-out;
+}
+
+#tab2:target .nav02{
+	color: rgba(255,255,255,1);
+	transform: scale(1.4);
 }
 
 #tab2:target .one{
@@ -53,15 +123,26 @@ body{
     transition: .4s  ease-out;
 }
 
+#tab3:target .nav03{
+	color: rgba(255,255,255,1);
+	transform: scale(1.4);
+}
+
 #tab3:target .one{
     transform: translate(-200vw);
     transition: .4s  ease-out;
+}
+
+#tab4:target .nav04{
+	color: rgba(255,255,255,1);
+	transform: scale(1.4);
 }
 
 #tab4:target .one{
     transform: translate(-300vw);
     transition: .4s  ease-out;
 }
+
 
 .window section{
 	position: absolute;
@@ -291,11 +372,36 @@ body{
         <div id="tab2">
             <div id="tab3">
 	            <div id="tab4">
+	            	<div class="contact">
+	            		<a href="tencent://message/?uin=2495137&Site=putongwang.com&Menu=yes" style="text-decoration:none">
+		            		<section class="QQ">
+		            			<span>
+		            				<svg class="qqicon" width="30" height="30" viewBox="0 0 1024 1024" fill="#fff">
+		            					<path fill-rule="evenodd" d="M878.4 635.2l-1.6-12.8-3.2-14.4-1.6-6.4-1.6-8-3.2-6.4-1.6-8-6.4-16-11.2-22.4-4.8-11.2-14.4-24-8-11.2-9.6-16-1.6-3.2-1.6-1.6v-1.6l1.6-4.8 3.2-4.8 1.6-9.6 1.6-4.8v-16l-1.6-4.8-1.6-6.4-1.6-8-1.6-6.4-3.2-6.4-3.2-4.8-1.6-6.4-3.2-4.8-4.8-9.6-1.6-1.6-1.6-14.4-1.6-8-3.2-22.4-3.2-14.4-3.2-12.8-3.2-8-1.6-8-3.2-6.4-3.2-8-6.4-14.4-3.2-8-4.8-8-4.8-6.4-3.2-8-6.4-8-4.8-6.4-6.4-8-12.8-12.8-8-6.4-4.8-3.2-3.2-3.2-8-4.8-19.2-12.8-9.6-4.8-22.4-9.6-9.6-3.2-12.8-3.2-9.6-3.2-12.8-3.2-9.6-1.6-12.8-1.6-22.4-3.2h-44.8l-22.4 3.2-11.2 3.2-9.6 1.6-11.2 1.6-9.6 3.2-9.6 4.8-19.2 6.4-9.6 4.8-24 14.4-8 6.4-4.8 6.4-11.2 8-8 9.6-8 8-6.4 8-6.4 9.6-6.4 8-4.8 8-3.2 4.8-3.2 3.2-4.8 9.6-4.8 8-3.2 6.4-6.4 16-3.2 6.4-1.6 8-3.2 6.4-3.2 12.8-1.6 11.2-1.6 9.6-1.6 8v17.6l-3.2 1.6-4.8 9.6-1.6 8-3.2 12.8v8l-4.8 8-3.2 6.4-1.6 6.4-1.6 4.8-1.6 6.4-1.6 4.8v16l1.6 6.4 1.6 4.8-3.2 1.6-6.4 4.8-9.6 9.6-6.4 4.8-19.2 19.2-6.4 8-4.8 6.4-6.4 9.6-6.4 8-6.4 9.6-4.8 8-3.2 9.6-4.8 8-3.2 9.6-3.2 8-1.6 8-3.2 9.6-1.6 6.4-4.8 24v38.4l3.2 11.2v3.2l3.2 9.6 1.6 3.2 1.6 4.8 3.2 3.2v1.6h1.6l6.4-1.6 9.6-3.2 6.4-3.2 4.8-3.2 12.8-12.8 6.4-9.6 3.2-3.2 1.6-4.8 4.8-6.4v-3.2l1.6-1.6v-3.2h1.6l1.6-1.6v1.6h1.6l3.2 9.6 1.6 8 3.2 8 3.2 6.4 3.2 8 9.6 19.2 4.8 4.8 1.6 4.8 8 9.6 25.6 25.6 8 6.4 3.2 1.6 1.6 1.6v1.6h-1.6l-1.6 1.6h-11.2l-9.6 3.2h-4.8l-4.8 1.6-3.2 3.2-3.2 1.6-4.8 1.6-1.6 1.6-6.4 3.2-3.2 4.8-1.6 1.6-3.2 6.4-1.6 4.8-1.6 3.2v9.6l-1.6 3.2v12.8l1.6 3.2 1.6 4.8 1.6 3.2 1.6 1.6 1.6 3.2 11.2 11.2 19.2 9.6 8 3.2 8 1.6 8 3.2 19.2 3.2 8 1.6h9.6l19.2 3.2h60.8l8-1.6h6.4l6.4-1.6 11.2-1.6 6.4-1.6 8-1.6 12.8-6.4 6.4-1.6 4.8-3.2 19.2-9.6 4.8-3.2 4.8-4.8 8 1.6h25.6l6.4 3.2 6.4 1.6 4.8 1.6 11.2 3.2 12.8 4.8 22.4 6.4 11.2 1.6 12.8 1.6 33.6 4.8h52.8l11.2-1.6 9.6-1.6 8-1.6 9.6-1.6 8-1.6 3.2-1.6 4.8-1.6 8-3.2 12.8-6.4 9.6-6.4 3.2-1.6 1.6-3.2 6.4-9.6 1.6-1.6v-1.6l3.2-6.4v-8l-1.6-3.2-1.6-4.8v-3.2l-3.2-3.2-1.6-3.2-12.8-12.8-24-14.4-17.6-9.6-4.8-3.2h-1.6l-1.6-1.6 9.6-9.6 4.8-3.2 3.2-4.8 4.8-9.6 6.4-8 9.6-16 6.4-16 4.8-14.4 3.2-8 3.2-6.4 1.6-1.6h1.6l9.6 19.2 6.4 9.6 3.2 6.4 3.2 4.8 3.2 3.2 1.6 3.2 3.2 1.6 1.6 1.6h1.6l3.2 3.2h8l1.6-1.6 3.2-1.6 4.8-4.8 1.6-3.2 3.2-1.6 3.2-6.4 1.6-4.8 1.6-3.2 1.6-9.6 3.2-9.6v-9.6l1.6-6.4v-17.6z">
+		            				</svg>
+		            			</span>
+		            			<span class="point">2495137</span>		
+		            		</section>
+	            		</a>
+	            		<section>
+	            			<span>copyright</span>
+	            			<span class="point">2wm2.com</span>
+	            		</section>	 
+	            		<section>
+	            			<span>Powered by</span>
+	            			<span class="point">Github Pages</span>
+	            			<span>
+	            				<svg class="githubicon" width="24" height="24" viewBox="0 0 16 16" fill="#fff">
+	            					<path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+	            				</svg>
+	            			</span>
+	            		</section>	            		
+	            	</div>
 	                <ul class="tabmenu">
-	                        <a href="#tab1"><li>H5</li></a>
-	                        <a href="#tab2"><li>Web Desgin</li></a>
-	                        <a href="#tab3"><li>M Desgin</li></a>
-	                        <a href="#tab4"><li>Wechat</li></a>                    
+	                        <a class="botton01" href="#tab1"><li class="nav01">H5 Animation</li></a>
+	                        <a class="botton02" href="#tab2"><li class="nav02">Web Desgin</li></a>
+	                        <a class="botton03" href="#tab3"><li class="nav03">Mobile Desgin</li></a>
+	                        <a class="botton04" href="#tab4"><li class="nav04">Wechat Program</li></a>                    
 	                </ul>
 	                <div class="one">
 						<div class="window window1">
@@ -380,14 +486,14 @@ body{
 							</div>
 						</div>
 	                    <div class="window window2">
-	                    	<section><span class="title">Web Desgin</span><span class="hint">working...just wait...</span>
+	                    	<section><span class="title">Web</span><span class="hint">working...just wait...</span>
 	                    	</section>
 	                    </div>
 	                    <div class="window window3">
-	                    	<section><span class="title">M Desgin</span><span class="hint">working...just wait...</span></section>
+	                    	<section><span class="title">Mobile</span><span class="hint">working...just wait...</span></section>
 	                    </div>
 	                    <div class="window window4">
-	                    	<section><span class="title">Working</span><span class="hint">just wait...</span></section>
+	                    	<section><span class="title">Wechat</span><span class="hint">just wait...</span></section>
 	                    </div>
 	                </div>
 	            </div>
