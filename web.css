@@ -293,7 +293,7 @@
 	position: absolute;
 	width: 800px;
 	height: 600px;
-	animation: haha 8s infinite ease-out alternate;
+	animation: haha 10s infinite linear alternate;
 } 
 @keyframes haha{
 	0%{transform: translate(0px , 2px)}
@@ -312,7 +312,7 @@
 	position: absolute;
 	width: 800px;
 	height: 600px;
-	animation: bird 8s infinite ease-out alternate;
+	animation: bird 10s infinite  linear alternate;
 }
 
 @keyframes bird{
@@ -364,7 +364,7 @@
 }
 
 .wingse{
-	top:360px;
+	top:370px;
 	left: 440px;
 	filter: blur(.5px);
 	transform-origin: 50% 50%;
@@ -372,7 +372,7 @@
 }
 
 .wingsf{
-	top:355px;
+	top:365px;
 	left: 425px;
 	transform: translate3d(0px,0px ,80px)rotateX(-12deg)rotateY(15deg)scale(0.8);	
 }
@@ -407,6 +407,15 @@
 	top:230px;
 	left: 185px;
 	transform: translate3d(0px,0px ,60px)rotateX(-10deg)rotateY(-20deg);	
+	animation: bibi .2s infinite; 
+}
+
+.wingsj{
+	width: 100px;
+	height: 100px;
+	filter: blur(30px);
+	background-color: rgba(120,210,240,.1);
+	transform: translate3d(240px,280px ,0px)rotateX(-10deg)rotateY(-20deg);
 	animation: bibi .2s infinite; 
 }
 
