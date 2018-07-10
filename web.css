@@ -398,15 +398,15 @@
 }
 
 .wingsh{
-	top:260px;
-	left: 205px;
-	transform: translate3d(0px,0px ,150px)rotateX(-10deg)rotateY(-20deg);	
+	top:235px;
+	left: 215px;
+	transform: translate3d(0px,0px ,150px)rotateX(-5deg)rotateY(-15deg);	
 }
 
 .wingsi{
-	top:230px;
+	top:210px;
 	left: 185px;
-	transform: translate3d(0px,0px ,60px)rotateX(-10deg)rotateY(-20deg);	
+	transform: translate3d(0px,0px ,60px)rotateX(-5deg)rotateY(-15deg);	
 	animation: bibi .2s infinite; 
 }
 
@@ -415,7 +415,7 @@
 	height: 100px;
 	filter: blur(30px);
 	background-color: rgba(120,210,240,.1);
-	transform: translate3d(240px,280px ,0px)rotateX(-10deg)rotateY(-20deg);
+	transform: translate3d(240px,280px ,0px)rotateX(-5deg)rotateY(-15deg);
 	animation: bibi .2s infinite; 
 }
 
