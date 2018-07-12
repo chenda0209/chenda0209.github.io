@@ -227,10 +227,10 @@
 .design{
 	position: absolute;
 	left: 50%;
-	margin-left: -480px;
+	margin-left: -360px;
 	top: 50%;
-	margin-top: -200px;
-	width: 960px;
+	margin-top: -160px;
+	width: 720px;
 	height: 400px;
 }
 
@@ -238,16 +238,16 @@
 	float: left;
 	opacity: 0;
 	top: 200px;
-	width: 320px;
+	width: 240px;
 	height: 400px;
 }
 
 .computer{
-	margin: 40px;
+
 }
 
 .phone{
-	margin: 40px;
+
 }
 
 .more a{
@@ -256,9 +256,9 @@
 
 .com p,.mobile p{
 	color: #fff;
-	font-size: 32px;
+	font-size: 24px;
 	text-align: center;
-	line-height: 36px;
+	line-height: 112px;
 }
 
 .morebotton:hover{
