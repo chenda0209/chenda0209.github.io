@@ -31,14 +31,18 @@
 	right: 312px;
 	width: 50px;
 	height: 50px;
-	animation: fire .2s infinite;
+	animation: fire .4s infinite;
 }
 
 @keyframes fire{
-	0% {opacity: .5 ;transform:rotate(0deg)}
-	50% {opacity: 1 ;transform:rotate(10deg)}
-	51% {opacity: .5 ;transform:rotate(10deg)}
-	100% {opacity: 1 ;transform:rotate(0deg)}	
+	0% {opacity: .2 ;transform:rotate(0deg)}
+	25% {opacity: 1 ;transform:rotate(10deg)}
+	26% {opacity: .5 ;transform:rotate(10deg)scale(.9)}
+	50% {opacity: 1 ;transform:rotate(20deg)}	
+	51% {opacity: .2 ;transform:rotate(20deg)}
+	75% {opacity: 1 ;transform:rotate(10deg)scale(.9) }
+	76% {opacity: .5 ;transform:rotate(10deg)}
+	100% {opacity: 1 ;transform:rotate(0deg)}
 }
 
 
