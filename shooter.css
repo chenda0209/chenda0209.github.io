@@ -64,5 +64,5 @@
 
 @keyframes tanshe{
 	0%{transform: translate(0px,0px)rotate(0deg)}
-	100%{transform: translate(-80px,-40px)rotate(360deg)}
+	100%{transform: translate(-80px,0px)rotate(-180deg)}
 }
