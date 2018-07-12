@@ -1,0 +1,64 @@
+.dadada{
+	width: 800px;
+	height: 600px;
+	position: absolute;
+	left:50%;
+	margin-left: -400px;
+	top: 50%;
+	margin-top: -300px;
+}
+
+.shooter{
+	transform-origin: 375px 600px;
+	animation: doudong .1s infinite ease-in;
+}
+
+@keyframes doudong{
+	0%{transform:rotate(0deg)translate(0px)}
+	100%{transform:rotate(-.2deg)translate(-1px)}
+}
+
+.shooterbody{
+	width: 800px;
+	height: 600px;
+}
+
+.fire{
+	z-index: 1;
+	filter: blur(4px);
+	position: absolute;
+	top: 157px;
+	right: 312px;
+	width: 50px;
+	height: 50px;
+	animation: fire .2s infinite;
+}
+
+@keyframes fire{
+	0% {opacity: .5 ;transform:rotate(0deg)}
+	50% {opacity: 1 ;transform:rotate(10deg)}
+	51% {opacity: .5 ;transform:rotate(10deg)}
+	100% {opacity: 1 ;transform:rotate(0deg)}	
+}
+
+
+.shells{
+	top: 162px;
+	left: 397px;
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	background-color: rgba(255,255,255,0);
+}
+
+.shell{
+	position: absolute;
+	width: 10px;
+	height: 12px;
+	animation: tanshe .1s infinite;
+}
+
+@keyframes tanshe{
+	0%{transform: translate(0px,0px)rotate(0deg)}
+	100%{transform: translate(-80px,-40px)rotate(360deg)}
+}
