@@ -47,7 +47,7 @@
 
 
 .shells{
-	top: 177px;
+	top: 176px;
 	left: 320px;
 	position: absolute;
 	width: 300px;
@@ -60,7 +60,7 @@
 	width: 10px;
 	height: 12px;
 	offset-path:path("M80,0 Q0,0 0,40");
-	animation: tanshe .1s infinite;
+	animation: tanshe .1s infinite ease-in;
 }
 
 @keyframes tanshe{
