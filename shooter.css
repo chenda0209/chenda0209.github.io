@@ -59,8 +59,8 @@
 	position: absolute;
 	width: 10px;
 	height: 12px;
-	offset-path:path("M80,0 Q0,0 0,40");
-	animation: tanshe .1s infinite ease-in;
+	offset-path:path("M80,0 Q0,0 0,60");
+	animation: tanshe .12s infinite ease-in;
 }
 
 @keyframes tanshe{
