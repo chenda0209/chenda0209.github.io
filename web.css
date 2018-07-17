@@ -130,19 +130,19 @@
     opacity: 1;
     transform: translateY(-40px);
     transition: .4s  ease-out;
-    transition-delay: .4s;
+    transition-delay: .3s;
 }
 #tab2:target .mobile{
     opacity: 1;
     transform: translateY(-40px);
     transition: .4s  ease-out;
-    transition-delay: .8s;
+    transition-delay: .5s;
 }
 #tab2:target .more{
     opacity: 1;
     transform: translateY(-40px);
     transition: .4s  ease-out;
-    transition-delay: 1.2s;
+    transition-delay: .4s;
 }
 
 #tab3:target .nav03{
@@ -293,7 +293,7 @@
 	position: absolute;
 	width: 800px;
 	height: 600px;
-	animation: haha 16s infinite linear alternate;
+	animation: haha 24s infinite linear alternate;
 } 
 @keyframes haha{
 	0%{transform: translate(0px , 4px)}
@@ -312,7 +312,7 @@
 	position: absolute;
 	width: 800px;
 	height: 600px;
-	animation: bird 16s infinite  linear alternate;
+	animation: bird 24s infinite  linear alternate;
 }
 
 @keyframes bird{
@@ -383,7 +383,7 @@
 	transform: translate3d(0px,0px ,80px)rotateX(-5deg)rotateY(-15deg);	
 	stroke-dasharray: 0 300;
 	stroke-dashoffset:0px;
-	animation: miaobian 5s infinite ease-in ;
+	animation: miaobian 4s infinite ease-in ;
 }
 @keyframes miaobian{
 	20%{fill:none;}
