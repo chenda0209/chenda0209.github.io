@@ -112,7 +112,6 @@
 
 #tab1:target .one{
     transform: translate(0vw);
-    transition: .4s  ease-out;
 }
 
 #tab2:target .nav02{
@@ -122,7 +121,6 @@
 
 #tab2:target .one{
     transform: translate(-100vw);
-    transition: .4s  ease-out;
 }
 
 
@@ -130,20 +128,20 @@
     opacity: 1;
     transform: translateY(-40px);
     transition: .4s  ease-out;
-    transition-delay: .3s;
-}
-#tab2:target .mobile{
-    opacity: 1;
-    transform: translateY(-40px);
-    transition: .4s  ease-out;
-    transition-delay: .5s;
 }
 #tab2:target .more{
     opacity: 1;
     transform: translateY(-40px);
     transition: .4s  ease-out;
-    transition-delay: .4s;
+    transition-delay: .1s;
 }
+#tab2:target .mobile{
+    opacity: 1;
+    transform: translateY(-40px);
+    transition: .4s  ease-out;
+    transition-delay: .2s;
+}
+
 
 #tab3:target .nav03{
 	color: rgba(255,255,255,1);
@@ -152,7 +150,6 @@
 
 #tab3:target .one{
     transform: translate(-200vw);
-    transition: .4s  ease-out;
 }
 
 #tab4:target .nav04{
@@ -162,7 +159,6 @@
 
 #tab4:target .one{
     transform: translate(-300vw);
-    transition: .4s  ease-out;
 }
 
 
