@@ -6,6 +6,7 @@
 	margin-left: -400px;
 	top: 50%;
 	margin-top: -300px;
+	transform: scale(.8);
 }
 
 .shooter{
