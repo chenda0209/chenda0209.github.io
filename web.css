@@ -36,7 +36,7 @@
 	height: 36px;
 	border:  1px solid rgba(255,255,255,.5);
 	border-radius: 10px;
-	transition: .3s;
+	transition: .2s;
 }
 
 .QQ:hover{
@@ -81,7 +81,7 @@
     height: 50px;
     line-height: 50px;
     display: inline-block;
-    transition: .3s;
+    transition: .2s;
 }
 
 .botton01:hover .nav01{
@@ -271,6 +271,7 @@
 	text-align: center;
 	color: #fff;
 	font-size: 18px;
+	transition: .2s;
 }
 
 .iornman{
